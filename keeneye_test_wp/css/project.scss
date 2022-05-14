@@ -1,0 +1,207 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins';
+}
+/* vars */
+
+$theme-green:#01CC90;
+
+$light-font-color:#fff;
+$dark-font-color:#000;
+
+$link-hover-coloer:$theme-green;
+
+$primary-bg-color:#E5E5E5;
+$secondery-bg-color:rgba(36, 42, 45, 0.1);
+$primary-bg-color-dark:#242A2D;
+$light-element-bg-color:rgba(255, 255, 255, 0.7);
+$grenn-button-bg:$theme-green;
+$light-btn-bg-color:#fff;
+
+
+$header-top-margin:63px;
+$header-bottom-margin:0px;
+$header-bg-color:$primary-bg-color-dark;
+
+$section-padding-left: 9.7vw;
+$section-padding-right: 9.7vw;
+$section-padding-top:8.75vw;
+$section-padding-bottom:8.75vw;
+
+$primary-fontfaec:'Poppins';
+
+
+$h1 : normal normal 500 5.21vw/6.2vw $primary-fontfaec;
+$h2 : normal normal 500 3.81vw/119.4% $primary-fontfaec;
+$h3 : normal normal 400 2.78vw/119.4% $primary-fontfaec;
+$h4 : normal normal 500 1.94vw/119.4% $primary-fontfaec;
+
+$menu-font: normal normal 400 20px/119.4% $primary-fontfaec;
+
+
+
+.primary-bg{
+    background-color: $primary-bg-color;
+}
+.primary-bg-dark{
+    background-color: $primary-bg-color-dark;
+}
+.primary-bg-light{
+    background-color: $primary-bg-color;
+}
+.secondary-bg{
+    background-color: $secondery-bg-color;
+}
+
+h1{
+    font:$h1;
+    letter-spacing: -0.04em;
+}
+h2{
+    font:$h2;
+    letter-spacing: -0.04em;
+}
+h3{
+    font:$h3;
+    letter-spacing: -0.04em;
+}
+h4{
+    font:$h4;
+    letter-spacing: -0.04em;
+}
+
+/* Heder */
+header, header.py-3{
+    margin-bottom: $header-bottom-margin !important;
+    padding:  $header-top-margin $section-padding-right 10px $section-padding-left !important;
+}
+
+/* nav */
+
+.nav-link{
+    font:$menu-font;
+    color: $light-font-color;
+    &:hover{
+        background-color: $grenn-button-bg;
+        border-radius: 30px !important;
+        color:$primary-bg-color-dark;
+    }
+}
+
+
+.menu-button{
+    font:$menu-font;
+    line-height: 119.4%;
+    display: flex;
+    align-items: center;
+    color:$primary-bg-color-dark;
+    border-radius: 30px !important;
+    padding: 8px 13px;
+    background-color: $light-element-bg-color !important;
+}
+
+/* Button light */
+.btn-light{
+    background-color: $light-btn-bg-color;
+    color: $primary-bg-color-dark;
+    border:1px solid #101B4F;
+}
+
+.cta .btn:nth-child(1){margin-right: 1.39vw;}
+
+
+/* Sections */
+section{
+    
+    padding-top:  $section-padding-top !important;
+    padding-right:$section-padding-right !important;
+    padding-bottom:  0.7vw !important;
+    padding-left:  $section-padding-left !important;
+}
+
+/*Section Hero*/
+#sec-hero{
+    padding-bottom: 22.2vw !important;
+    .btn-dark{
+        border: 1px solid #fff;;
+    }
+    h1{
+        margin-top: 7.3vw;
+        margin-right:12.5vw;
+        color:$light-font-color;
+    }
+    h4{
+        font-family: 'Roboto' !important;
+        font-weight: 300;
+        font-size: 1.87vw;
+        letter-spacing: -0.06em;
+        color:$light-font-color;
+        margin-bottom: 5.83vw;
+    }
+    .cta{
+        position: relative;
+        bottom: 0;;
+    }
+}
+
+/*section 1*/
+#sec-1{
+    margin-bottom: 22.2vw;
+    h5{
+        width: 43.9vw;
+        margin:2.5vw auto 10.2vw;
+        font-weight: 400;
+    }
+}
+ 
+
+/* section 2*/
+#sec-2{
+    padding-top: $section-padding-top;
+    padding-bottom: $section-padding-bottom;
+    .btn-dark{
+        color: $grenn-button-bg;
+    }
+    div {
+        div{
+            &:nth-child(2){
+                > div{
+                    margin-left: 9.65vw; max-width:30.7vw;
+                    h4{margin-top: 3.26vw;}
+                    div {margin-top: 4.16vw;}
+                }
+            }
+        }
+    } 
+}
+
+
+
+/* Footer */
+footer{
+    .logo{
+        max-width: 115px;
+    }
+    span{
+        strong{
+            font-size:1.39vw ;
+        }
+    }
+    ul{
+            margin: 2.7vw 0 0;
+            list-style: none;
+            padding: 0;
+            li{
+                margin-bottom: 1.87vw;
+                a{
+                    color: $dark-font-color;
+                    text-decoration: none;
+                    &:hover{
+                        color: $link-hover-coloer;
+                    }
+                }
+            }
+            .copyright{margin-top: 16.04vw;}
+        }
+}

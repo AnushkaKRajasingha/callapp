@@ -1,0 +1,35 @@
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 480px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1440px,
+        xxl: 1900px
+    );
+    
+    $container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 1024px,
+        xl: 1440px,
+        xxl: 1610px
+    );
+$green : #01CC90;
+$primary : $green;
+
+$border-radius:30px;
+$border-radius-sm:30px;
+$border-radius-lg:30px;
+
+$font-size-base: 0.9rem;
+$btn-font-size:1.18vw;
+$btn-font-weight:600;
+$btn-padding-y:1.04vw;
+$btn-padding-x:3.12vw;
+
+@import "scss/myvars";
+@import "scss/functions";
+@import "scss/variables";
+@import "scss/bootstrap";
+
